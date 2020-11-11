@@ -61,30 +61,38 @@ def loe_andmed_csv(csv_fail):
 # leiab andmebaasist saaja nime järgi valdkonna
 def leia_valdkond_andmebaasist(andmebaas, nimi):
     for rida in andmebaas:
-        if rida[0] in nimi:
+        if rida[0].lower() in nimi.lower():
             return rida[1].strip()
-    #print(nimi) #annab ekraanile, mis pole andmebaasis
+    #print(nimi) # kuvab ekraanile, mis pole andmebaasis
     return "Teadmata"
     
 def sorteeri_andmed(andmebaas, andmed):
     sorteeritud = {}
+    sorteeritud['Väljeminekute kategooria'] = {}
+    sorteeritud['Sissetulekute kategooria'] = {}
     for rida in andmed:
         summa = float(rida[2].replace(',','.'))
-        #print(rida)
         if rida[1] == "Sissetulekud":
-            if rida[1] not in sorteeritud:
-                sorteeritud['Sissetulekud'] = summa
-            else:
-                sorteeritud['Sissetulekud'] += summa
+            sorteeritud['Sissetulekud'] = summa
         elif rida[1] == "Väljaminekud":
-            if rida[1] not in sorteeritud:
-                sorteeritud['Väljaminekud'] = summa
-            else:
-                sorteeritud['Väljaminekud'] += summa
+            sorteeritud['Väljaminekud'] = summa
+        elif rida[1] == "Saldo":
+            sorteeritud['Saldo'] = summa
         else:
             valdkond = leia_valdkond_andmebaasist(andmebaas, rida[1])
-            if valdkond not in sorteeritud:
-                sorteeritud[valdkond] = summa
-            else:
-                sorteeritud[valdkond] += summa
+
+            # kulutused
+            if rida[3] == "D":
+                if valdkond not in sorteeritud['Väljeminekute kategooria']:
+                    sorteeritud['Väljeminekute kategooria'][valdkond] = summa
+                else:
+                    sorteeritud['Väljeminekute kategooria'][valdkond] += summa
+
+            # sissetulekud
+            if rida[3] == "K":
+                if valdkond not in sorteeritud['Sissetulekute kategooria']:
+                    sorteeritud['Sissetulekute kategooria'][valdkond] = summa
+                else:
+                    sorteeritud['Sissetulekute kategooria'][valdkond] += summa
+
     return sorteeritud
