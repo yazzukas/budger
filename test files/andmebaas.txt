@@ -1,3 +1,81 @@
-PIRITA SELVERI ISETEEN, Toidupood
-FOOD.BOLT.EU,Toit
+SELVER, Toidupood
+FOOD.BOLT.EU, Toit
 BOLT.EU, Transport
+pargi.ee, Parkimine
+ARVUTITARK, Tehnika
+RIMI, Toidupood
+Spotify, Veebiteenused
+Netflix, Veebiteenused
+CIRCLE K, Kütus
+DENIM DREAM, Riided
+CITYBEE, Transport
+GOOGLE, Veebiteenused
+APPLE.COM/BILL, Veebiteenused
+VLND BURGER, Toit
+Barking OUe, Parkimine
+Prisma, Toidupood
+REVAL CAFE, Toit
+BUXHOWDEN, Toit
+SALOME AUTO, Auto
+KAUPLIIVALA, Toidupood
+KAUPLURAATUSE, Toidupood
+NOOR TEHNIK, Tehnika
+Ehituse ABC, Kodu
+KONSUM, Toidupood
+BAUHOF, Kodu
+K Rauta, Kodu
+KAUBAMAJA, Kodu
+VIRU KESKUSE PARKLA, Parkimine
+IM ARVUTID, Tehnika
+PHOTO, Tehnika
+NORDIC DIGITAL, Tehnika
+HOUSE, Riided
+SANGAR, Riided
+SPORTLAND, Riided
+Motonet, Auto
+TANKLA, Kütus
+H & M, Riided
+COCA COLA PLAZA, Meelelahutus
+EUROPARK, Parkimine
+ALANDEKO, Kodu
+APELSIN, Kodu
+TRADEHOUSE, Tervis ja Ilu
+JYSK, Kodu
+Wolt, Toit
+EURONICS, Tehnika
+VAPIANO, Toit
+VARUOSAMARKET, Tehnika
+kauplus, Toidupood
+LYON, Toit
+ALEXELA, Kütus
+FRANK, Baar
+ILLEGAARD, Baar
+TARTU ÜLIKOOL, Stipendium
+MakeCommerce, Veebipoed
+KLIIN, Kodu
+COMARKEVESKITA, Toidupood
+Vending Baltics, Auto
+TULELEEK, Toit
+KIUS RESTO, Toit
+SPORDIMEDITSIINIKESKUS, Tervis ja Ilu
+AS DEVORI KAUBANDUSE, Auto
+Piano, Toit
+Mtech, Auto
+MAKSIMARKET, Toidupood
+VASTUVÕTT (Ravi), Tervis ja Ilu
+Maxima, Toidupood
+ZONE MEDIA, Veebiteenused
+MKESKUS, Veebiteenused
+APOLLO KINO, Meelelahutus
+OÜ DORMIKOR, Tehnika
+KLAAR OÜ, Tehnika
+HESBURGER, Toit
+FORUM CINEMAS OÜ, Meelelahutus
+AS EESTI LIINIRONGID, Transport
+EESTI POST, Muud teenused
+1A.EE, Tehnika
+AIRO CATERING, Toit
+Uber, Transport
+OOMIPOOD, Tehnika
+AUTO24 AS, Auto
+ITUNES.COM/BILL, Veebiteenused

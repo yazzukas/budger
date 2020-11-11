@@ -63,6 +63,7 @@ def leia_valdkond_andmebaasist(andmebaas, nimi):
     for rida in andmebaas:
         if rida[0] in nimi:
             return rida[1].strip()
+    #print(nimi) #annab ekraanile, mis pole andmebaasis
     return "Teadmata"
     
 def sorteeri_andmed(andmebaas, andmed):
