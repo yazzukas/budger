@@ -5,7 +5,7 @@ import andmete_sorteerimine as a
 
 #failinimi = input("Sisestage faili nimi, millest soovite lugeda: ")
 andmebaas = a.loe_andmebaas('test files/andmebaas.txt')
-a.puhasta_csv_fail('test files/Budger sample.csv', 'test files/puhastatud.csv')
+a.puhasta_csv_fail('test files/statement (1).csv', 'test files/puhastatud.csv')
 sorteeritud_andmed = a.sorteeri_andmed(andmebaas, a.loe_andmed_csv('test files/puhastatud.csv'))
 
 #print(andmebaas)
@@ -18,7 +18,9 @@ print()
 print("Kulutuste kategooriad:")
 
 # https://stackoverflow.com/questions/613183/how-do-i-sort-a-dictionary-by-value
-kategooriad_väljaminek = {k: v for k, v in sorted(sorteeritud_andmed['Väljeminekute kategooria'].items(), key=lambda item: item[1], reverse=True)}
+kategooriad_väljaminek = {k: v for k, v in
+                          sorted(sorteeritud_andmed['Väljeminekute kategooria'].items(), key=lambda item: item[1],
+                                 reverse=True)}
 for i in kategooriad_väljaminek:
     print(i+":", round(kategooriad_väljaminek[i],2), "eurot.")
 
