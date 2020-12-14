@@ -1,3 +1,7 @@
+#Budger
+#Sten Ambus, Kaur Vali, 2020
+
+
 import csv
 
 # loeb andmebaasi järjendisse ja tagastab selle
@@ -7,6 +11,31 @@ def loe_andmebaas(failinimi):
         for rida in fail:
             andmebaas.append(rida.strip().split(","))
     return andmebaas
+
+
+#lisab poe ja kategooria andmebaasi
+def lisa_andmebaasi(failinimi, kategooria, nimi):
+    with open(failinimi, "a", encoding = "UTF-8") as fail:
+        fail.write(nimi+", "+kategooria.lower().capitalize())
+
+
+#lisab tundmatud ajutisse andmebaasi
+def lisa_tundmatute_andmebaasi(nimi, failinimi = "data/temp.txt"):
+    with open(failinimi, "a+", encoding="UTF-8") as fail:
+        if len(nimi)>0:
+            fail.write(nimi+"\n")
+
+
+#loeb tundmatud asjutisest andmebaasis
+def loe_tundmatute_andmebaasi(failinimi = "data/temp.txt"):
+    with open(failinimi, "r", encoding="UTF-8") as fail:
+        andmebaas=[]
+        for rida in fail:
+            rida = rida.strip()
+            if rida not in andmebaas:
+                andmebaas.append(rida)
+        return andmebaas
+
 
 # https://stackoverflow.com/questions/3276180/extracting-date-from-a-string-in-python
 import re
@@ -63,7 +92,7 @@ def leia_valdkond_andmebaasist(andmebaas, nimi):
     for rida in andmebaas:
         if rida[0].lower() in nimi.lower():
             return rida[1].strip()
-    #print(nimi) # kuvab ekraanile, mis pole andmebaasis
+    lisa_tundmatute_andmebaasi(nimi)
     return "Teadmata"
     
 def sorteeri_andmed(andmebaas, andmed):
