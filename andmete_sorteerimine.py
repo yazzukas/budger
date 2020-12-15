@@ -75,8 +75,6 @@ def swedbank_csv(csvlugemiseks, csvkirjutamiseks):
         kuupäev_temp = leia_kuupäev_tekstist(selgitus)
         if kuupäev_temp != None:
             kuupäev = kuupäev_temp
-            
-        print(kuupäev)
                 
         # 10 - algsaldo 20 - tehingud  82 - sissetulek/väljaminek 86 - lõppsaldo
         if kategooria == "20":

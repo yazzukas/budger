@@ -14,8 +14,9 @@ def sulge():
 
 
 def kuvamine():
-    if b3:
+    if b3 or l5:
         b3.pack_forget()
+        l5.pack_forget()
 
     global fail, kaust
     global l3, l4
@@ -51,7 +52,7 @@ def kuvamine():
         l4_text.set(s)
 
     global b2
-    b2 = Button(raam, text="Vaata tundmatuid", command=vali_tundmatu)
+    b2 = Button(raam, text="Vaata teadmatuid", command=vali_tundmatu)
 
     l3.config(font=("Avenir", 12))
     l4.config(font=("Avenir", 12))
@@ -85,7 +86,6 @@ def vali_tundmatu():
     l4.destroy()
     b2.pack_forget()
 
-    l5 = Text(raam)
     l5.pack()
 
     for i in a.loe_tundmatute_andmebaasi():
@@ -109,7 +109,8 @@ logo = Label(raam, text="Budger")
 l1 = Label(raam, text="Aitab sul planeerida raha ning seeläbi täita unistused!")
 l2 = Label(raam, text="Budger kuvab sulle ekraanile sissetulekud, väljaminekud koos kategooriatega ning kontosaldo\n\n"
                       "Alustuseks avame .csv faili, mille sa saad pangast*!\n"
-                      "(*hetkel teadaolevalt toimib swedbank)")
+                      "(*hetkel teadaolevalt toimib Swedbank ja SEB)")
+l5 = Text(raam)
 b = Button(raam, text="Ava fail", command=vali_fail)
 b3 = Button(raam, text="Tagasi", command=kuvamine)
 
