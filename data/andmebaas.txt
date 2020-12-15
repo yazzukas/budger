@@ -79,3 +79,11 @@ Uber, Transport
 OOMIPOOD, Tehnika
 AUTO24 AS, Auto
 ITUNES.COM/BILL, Veebiteenused
+T GRUPP AS, Transport
+RIDANGO AS, Transport
+EESTI LIINIRONGID AS, Transport
+TARTU ÜLIÕPILASKÜLA, Eluase
+24-7FITNESSKLUBI OÜ, Tervis ja Ilu
+lehed.ee, Meelelahutus
+ALIEXPRESS.COM, veebipoed
+RAHANDUSMINISTEERIUM, Toetus
